@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import AppClass from './AppClass';
 
-function App() {
+function App(props) {
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save.
         </p>
         <a
           className="App-link"
@@ -17,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <AppClass nome="João" idade="30"></AppClass>
       </header>
     </div>
   );
